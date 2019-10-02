@@ -1,0 +1,158 @@
+/* START NAVBAR */
+#navbar{
+	background-color:black;
+	padding:5px;
+	padding-left:20px;
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.6);
+}
+#collapsibleNavbar{
+	margin-right:125px;
+}
+#logoimage{
+	height:35px;
+}
+.navbar-brand{
+	padding:0px;
+	padding-left:3px;
+}
+.navbar-nav{
+	width:100%;
+}
+.nav-item{
+	display:block;
+	width:20%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	font-family:'Barlow Semi Condensed', sans-serif;
+	color:white;
+	font-size:15px;
+	text-align:center;
+	text-shadow: 2px 1px 2px black;
+}
+.nav-link{
+	font-family:'Barlow Semi Condensed', sans-serif;
+	color:white;
+	font-size:15px;
+	text-align:center;
+	text-shadow: 2px 1px 2px black;
+}
+.navbar-dark .navbar-nav .nav-link-active{
+	color:#f2f2f2ab;
+}
+.nav-link-active{
+	color:black;
+}
+.nav-link:hover{
+	color:#f2f2f2ab;
+}
+.navbar-toggler {
+    border:1px solid white;
+}
+.navbar-dark .navbar-toggler-icon{
+	background-image:url("/mainassets/menuicon_white.svg")
+}
+/* END NAVBAR */
+
+/* START ARTISTBAR */
+#artistbar{
+	padding-top:20px;
+	margin-top:50px;
+	width:100%;
+	height:200px;
+	margin-bottom:20px;
+}
+#artistlogo_container{
+	width:200px;
+	margin:auto;
+}
+#artistlogo{
+	width:100%;
+	image-orientation:from-image;
+}
+/* END ARTISTBAR*/
+
+/*START SORTBAR */
+#sortbar_container{
+	height:40px;
+}
+#sortbar{
+	width:250px;
+	margin:auto;
+}
+.sort-link{
+	font-family:'Barlow Semi Condensed', sans-serif;
+	color:#660000;
+	font-size:15px;
+	text-shadow: none;
+	padding:0px;
+}
+.sort-item{
+	width:50%;
+}
+.sort-link-active{
+	color:black;
+	border-bottom:none;
+	text-shadow: none;
+	padding:0px;
+}
+.sort-link:hover{
+	color:black;
+}
+.sort-link-active:hover{
+	color:black;
+}
+/* END SORTBAR */
+
+/* START GALLERY */
+#gallery_container{
+	padding:50px;
+	padding-bottom:15px;
+}
+#gallery{
+	margin:auto;
+	max-width:1000px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+.gallerycard{
+	padding:0px;
+	background-size:cover;
+	height:300px;
+	width:300px;
+	vertical-align: top;
+    display: inline-block;
+	flex: 1 0 50%;
+	background-repeat:no-repeat;
+	border-radius:2px;
+	margin-bottom:40px;
+}
+#gallery > a {
+	margin:auto;
+}
+.gallerycard_overlay{
+	position:absolute;
+	background-image:url("gallery/other/overlayimage.png");
+	opacity:0.0;
+	height:300px;
+	width:300px;
+}
+.gallerycard_overlay:hover{
+	opacity:1;
+	transition:0.33s;
+}
+.gallerycard_caption{
+	font-family: 'Raleway', sans-serif;
+	color:white;
+	font-size:18px;
+	padding-top:80%;
+	padding-left:10%;
+	text-align:left;
+	line-height:25px;
+}
+/*END GALLERY */
