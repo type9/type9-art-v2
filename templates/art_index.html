@@ -1,0 +1,27 @@
+<!-- templates/art_index.html-->
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Primary CSS Sheet -->
+<link rel="stylesheet" href="stylesheets/art_index.css">
+
+<!-- Primary JS Script -->
+<script src="javascript_scripts/art_artindex.js"></script>
+
+<!-- Primary PHP Script -->
+
+<title style="display:none;">TYPE9 - Art</title>
+<link rel="icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+
+<div class="container-fluid" id="artistbar">
+	<div class="col-sm-8" id="artistlogo_container">
+	<img src="http://assets.typenyne.com/main_assets/logo_medium.svg" alt="logo_medium" id="artistlogo">
+	</div>
+</div>
+
+<div class="container-fluid" id="gallery_container">
+	<div id="gallery">
+	</div>
+</div>
+{% endblock %}
