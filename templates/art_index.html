@@ -1,17 +1,24 @@
 <!-- templates/art_index.html-->
 {% extends 'base.html' %}
 
+{% block head %}
+	<title style="display:none;">TYPE9 - Art</title>
+	<link rel="icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+
+	<!-- Primary CSS Sheet -->
+	<link rel="stylesheet" 
+		 src="{{ url_for('static', filename = 'stylesheets/art_index.css') }}" >
+	<!-- Navbar CSS Sheet -->
+	<link rel="stylesheet"  
+		src="{{ url_for('static', filename = 'stylesheets/navbar.css') }}" >
+	<!-- Primary JS Script -->
+	<script type=text/javascript 
+         src="{{ url_for('static', filename = 'javascript_scripts/art_index.js') }}" ></script>
+{% endblock %}
+
+
 {% block content %}
-<!-- Primary CSS Sheet -->
-<link rel="stylesheet" href="stylesheets/art_index.css">
-
-<!-- Primary JS Script -->
-<script src="javascript_scripts/art_artindex.js"></script>
-
-<title style="display:none;">TYPE9 - Art</title>
-<link rel="icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
-<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
-
 <div class="container-fluid" id="artistbar">
 	<div class="col-sm-8" id="artistlogo_container">
 	<img src="http://assets.typenyne.com/main_assets/logo_medium.svg" alt="logo_medium" id="artistlogo">

@@ -1,34 +1,40 @@
 <!-- templates/art_view.html-->>
 {% extends 'base.html' %}
 
+{% block head %}
+	<title style="display:none;">TYPE9 - Art</title>
+	<link rel="icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+	<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
+
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
+	<!-- Primary CSS Sheet -->
+	<link rel="stylesheet" type="text/css" 
+		 src="{{ url_for('static', filename = 'stylesheets/art_view.css') }}" >
+	<!-- Navbar CSS Sheet -->
+	<link rel="stylesheet" type="text/css" 
+		src="{{ url_for('static', filename = 'stylesheets/navbar.css') }}" >
+	<!-- Primary JS Script -->
+	<script type="text/javascript" 
+		 src="{{ url_for('static', filename = 'javascript_scripts/art_view.js') }}" ></script>
+{% endblock %}
+
 {% block content %}
-<!-- Primary CSS Sheet -->
-<link rel="stylesheet" href="stylesheets/art_view.css">
-
-<!-- Primary JS Script -->
-<script src="javascript_scripts/art_view.js"></script>
-
-<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-
-<title style="display:none;">TYPE9 - Art</title>
-<link rel="icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
-<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
-
-<div class="container_fluid" id="filler"></div>
-<div class="container_fluid" id="content_container">
-	<div class="" id="media_container">
-		<img src="http://assets.typenyne.com/art_gallery/{{artpiece.id}}/full.jpg" alt="404" id="{{artpiece.id}}"></img>
-	</div>
-
-	<div id="info_container">
-		<h2 id="title">{{artpiece.title}}<br>
-			<small id="caption">{{artpiece.caption}}</small>
-		</h2>
-		<div id="description">{{artpiece.description}}
+	<div class="container_fluid" id="filler"></div>
+	<div class="container_fluid" id="content_container">
+		<div class="" id="media_container">
+			<img src="http://assets.typenyne.com/art_gallery/{{artpiece.id}}/full.jpg" alt="404" id="{{artpiece.id}}"></img>
 		</div>
-		<div id="date">{{artpiece.date}}</div>
+
+		<div id="info_container">
+			<h2 id="title">{{artpiece.title}}<br>
+				<small id="caption">{{artpiece.caption}}</small>
+			</h2>
+			<div id="description">{{artpiece.description}}
+			</div>
+			<div id="date">{{artpiece.date}}</div>
+		</div>
 	</div>
-</div>
 {% endblock %}

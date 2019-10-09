@@ -5,7 +5,7 @@ client = MongoClient()
 db = client.Type9Art
 portfolio = db.art_portfolio
 
-app = Flask(__name__, static_url_path='')
+app = Flask(__name__, static_url_path='/static')
 
 @app.route('/art')
 def art_index():
