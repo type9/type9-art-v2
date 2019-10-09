@@ -21,7 +21,7 @@
 <div class="container-fluid" id="gallery_container">
 	<div id="gallery">
 		{% for artpiece in portfolio %}
-			<a href='/'>
+			<a href='/art/{{artpiece.id}}'>
 				<div class='gallerycard' id='{{artpiece.id}}' style='background-image:url("http://assets.typenyne.com/art_gallery/{{artpiece.id}}/thumb.jpg")'>
 					<div class='gallerycard_overlay'>
 						<div class='container-fluid gallerycard_caption'> {{artpiece.caption}} </div>
