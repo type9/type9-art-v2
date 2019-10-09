@@ -1,0 +1,35 @@
+<!-- templates/art_new.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<form method='POST' action='/art'>
+    <fieldset>
+    <legend>New Art Piece</legend>
+    <!-- TITLE -->
+    <p>
+        <label for='id'>Type9 Asset Server Unique ID</label><br>
+        <input type='text' name='id' />
+    </p>
+    <p>
+        <label for='title'>Title</label><br>
+        <input type='text' name='title' />
+    </p>
+    <p>
+            <label for='caption'>Caption</label><br>
+            <input type='text' name='caption' />
+    </p>
+    <p>
+        <label for='description'>Description</label><br>
+        <input type='text' name='description' />
+    </p>
+    <p>
+            <label for='date'>Date</label><br>
+            <input type='text' name='date' />
+    </p>
+    </fieldset>
+    <!-- BUTTON -->
+    <p>
+        <button type='submit'>Save art</button>
+    </p>
+</form>
+{% endblock %}

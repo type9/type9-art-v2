@@ -58,6 +58,7 @@
 	max-width:1000px;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: left;
 }
 .stretch {
     width: 100%;
@@ -82,7 +83,7 @@
 }
 .gallerycard_overlay{
 	position:absolute;
-	background-image:url("gallery/other/overlayimage.png");
+	background-image:url("http://assets.typenyne.com/main_assets/artgallery_overlay.png");
 	opacity:0.0;
 	height:300px;
 	width:300px;
