@@ -7,11 +7,11 @@
 	<link rel="shortcut icon" href="http://assets.typenyne.com/main_assets/favicon.png" type="image/png" />
 
 	<!-- Primary CSS Sheet -->
-	<link rel="stylesheet" 
-		 src="{{ url_for('static', filename = 'stylesheets/art_index.css') }}" >
+	<link rel="stylesheet" type="text/css" 
+		 href="{{ url_for('static', filename = 'stylesheets/art_index.css') }}" >
 	<!-- Navbar CSS Sheet -->
-	<link rel="stylesheet"  
-		src="{{ url_for('static', filename = 'stylesheets/navbar.css') }}" >
+	<link rel="stylesheet" type="text/css" 
+		href="{{ url_for('static', filename = 'stylesheets/navbar.css') }}" >
 	<!-- Primary JS Script -->
 	<script type=text/javascript 
          src="{{ url_for('static', filename = 'javascript_scripts/art_index.js') }}" ></script>
@@ -24,7 +24,7 @@
 	<img src="http://assets.typenyne.com/main_assets/logo_medium.svg" alt="logo_medium" id="artistlogo">
 	</div>
 </div>
-
+<div class="container-fluid" id="sort"><a href="/art/new">New Art Piece</a></div>
 <div class="container-fluid" id="gallery_container">
 	<div id="gallery">
 		{% for artpiece in portfolio %}

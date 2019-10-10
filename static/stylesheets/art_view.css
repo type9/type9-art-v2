@@ -1,11 +1,3 @@
-#filler {
-	width:100%;
-	height:50px;
-}
-#content_container{
-	height:100%;
-	background-color:#f2f2f2;
-}
 /* START INFO CONTAINER */
 #info_container{
 	position:fixed;
@@ -14,7 +6,6 @@
 	width:300px;
 	top:50px;
 	right:0px;
-
 	padding: 40px 20px 0px 20px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:black;

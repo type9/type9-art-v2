@@ -1,0 +1,35 @@
+<!-- templates/art_edit.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<form method='POST' action='/art/{{artpiece.id}}/{{artpiece._id}}'>
+    <fieldset>
+    <legend>New Art Piece</legend>
+    <!-- TITLE -->
+    <p>
+        <label for='id'>Type9 Asset Server Unique ID</label><br>
+        <input type='text' name='id' value='{{artpiece.id}}'/>
+    </p>
+    <p>
+        <label for='title'>Title</label><br>
+        <input type='text' name='title' value='{{artpiece.title}}'/>
+    </p>
+    <p>
+            <label for='caption'>Caption</label><br>
+            <input type='text' name='caption' value='{{artpiece.caption}}'/>
+    </p>
+    <p>
+        <label for='description'>Description</label><br>
+        <input type='text' name='description' value='{{artpiece.description}}'/>
+    </p>
+    <p>
+            <label for='date'>Date</label><br>
+            <input type='text' name='date' value='{{artpiece.date}}'/>
+    </p>
+    </fieldset>
+    <!-- BUTTON -->
+    <p>
+        <button type='submit'>Save art</button>
+    </p>
+</form>
+{% endblock %}
