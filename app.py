@@ -3,9 +3,9 @@ from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 
-host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Type9')
+host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Type9Art')
 client = MongoClient(host=f'{host}?retryWrites=false')
-db = client.Type9Art
+db = client.get_default_database()
 portfolio = db.art_portfolio
 
 app = Flask(__name__, static_url_path='')
