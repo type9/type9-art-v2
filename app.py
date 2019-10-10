@@ -4,7 +4,7 @@ from bson.objectid import ObjectId
 
 import os
 host = os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/Playlister')
-client = MongoClient(host=host)
+client = MongoClient(host=f'{host}?retryWrites=false')
 db = client.Type9Art
 portfolio = db.art_portfolio
 
